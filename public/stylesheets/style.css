@@ -1,8 +1,162 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:lightgray;
 }
 
-a {
-  color: #00B7FF;
+header{
+
+  text-align: center;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;  
+  padding: 20px;
+  border-radius: 15px; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:"izq drcha";
+  min-height: 10vh;
+
 }
+
+header #izq{
+
+  color:lightskyblue;
+  font-weight: bold;
+  font-size:50px;
+}
+
+
+header #drcha{
+  display: flex;  
+  gap: 20px;
+  color:rgb(87, 92, 95);
+  font-size:15px;
+}
+
+#main {
+  margin:1em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;   /* izquierda más ancha, derecha más estrecha */
+  grid-template-areas: "izq drcha"; /* define las áreas */
+  gap: 20px;                   
+}
+
+
+#tarjetaDrcha{
+  background-color: white;   
+  padding: 15px;             
+  border-radius: 8px;        
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  display:flex;
+  flex-direction: column;  
+  justify-content: space-between;
+     
+}
+
+#tarjetaDrcha h1{
+  grid-area: drcha;
+  color: lightskyblue;
+
+}
+
+#tarjetaDrcha #a{
+
+  color: rgb(75, 76, 77);
+
+}
+
+#tarjetaIzq{
+  
+  grid-area: izq;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "articulo1 articulo1 articulo2"
+  "articulo3 articulo4 articulo5";
+  gap:15px;
+
+}
+
+.articulo1 { grid-area: articulo1; background-color: white; color: white; font-weight: bold;             
+  border-radius: 8px;        
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); background-image: url("https://picsum.photos/400/300"); 
+  display:flex; flex-direction: column; justify-content: center; align-items: center;}
+
+.articulo2 { grid-area: articulo2;background-color: white;            
+  border-radius: 8px;        
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); padding: 10px;}
+
+.articulo3 { grid-area: articulo3;background-color: white; padding: 10px;;             
+  border-radius: 8px;        
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+
+.articulo4 { grid-area: articulo4;background-color: white ;  padding: 10px;           
+  border-radius: 8px;        
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+  
+.articulo5 { grid-area: articulo5;background-color: white; padding: 10px;            
+  border-radius: 8px;        
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
+
+#tarjetaIzq img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  justify-content: space-between;
+  background-color: rgb(53, 53, 53);
+  color: white;
+  align-items: center;  
+  padding: 20px;
+  border-radius: 15px; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:"izq drcha";
+  min-height: 10vh;
+
+}
+
+footer #izq{
+
+  color:white;
+  font-size:15px;
+}
+
+
+footer #drcha{
+  display: flex;  
+  gap: 20px;
+  color:rgb(87, 92, 95);
+  font-size:15px;
+  color: lightgray;
+}
+
+
+
